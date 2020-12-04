@@ -1,0 +1,59 @@
+<div class="c">
+    <mat-toolbar>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="example-spacer"></span>
+        <span>WELCOME TO
+            &nbsp; <strong style="color: maroon; font-size: 30px;">ʀᴇɴᴛ𝟺ᴡʜᴇᴇʟs</strong></span>
+        <span class="example-spacer"></span>
+       <button mat-stroked-button color="accent" routerLink="/contact">Contact Us</button>
+       <button mat-stroked-button color="primary" routerLink="/">Logot</button>
+    
+      </mat-toolbar>
+    <div style="display: flex;flex-direction: column;gap: 50px;">
+        <div style="display: flex;flex-direction: row;gap: 50px;" >
+            <div *ngFor="let car of cars">
+                <mat-card class="card">
+                    <mat-card-header>
+                      <mat-card-title>{{car.name}}</mat-card-title>
+                      <mat-card-subtitle>{{car.sub}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src='/{{car.path}}' alt="{{car.name}}" style="width: 370px; height: 300px;">
+                    <mat-card-content>
+                      <p>
+                      Details : {{car.det}}
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-raised-button color="warn"  matTooltip="Click To Book Journey" routerLink="/booking">Book Now</button>
+                    </mat-card-actions>
+                  </mat-card>
+                  
+            </div>
+        </div>
+        <div style="display: flex;flex-direction: row;gap: 50px;" >
+            <div *ngFor="let car of cars1">
+                <mat-card class="card">
+                    <mat-card-header>
+                      <mat-card-title>{{car.name}}</mat-card-title>
+                      <mat-card-subtitle>{{car.sub}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src='/{{car.path}}' alt="{{car.name}}" style="width: 370px; height: 300px;">
+                    <mat-card-content>
+                      <p>
+                      Details : {{car.det}}
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-raised-button color="warn" matTooltip="Click To Book Journey" routerLink="/booking">Book Now</button>
+                    </mat-card-actions>
+                  </mat-card>
+                  
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <app-footer></app-footer>
+</div>

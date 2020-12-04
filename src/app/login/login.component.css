@@ -1,0 +1,25 @@
+.back{
+    background-image: url(/assets/images/wallpaper.jpg);
+    /* background-color: grey; */
+    background-size: cover;
+    opacity: .9;
+    height: 100vh;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 30%;
+	min-width: 230px;
+	max-width: 300px;
+	font-family: 'Quicksand', sans-serif;
+}
+.mat-tab-icon{
+    margin-right: 8px;
+}
